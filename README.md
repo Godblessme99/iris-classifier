@@ -62,7 +62,7 @@ iris-classifier/
 
 ```bash
 
-git clone https://github.com/<YOUR\_USERNAME>/iris-classifier.git
+git clone https://github.com/Godblessme99/iris-classifier.git
 
 cd iris-classifier
 

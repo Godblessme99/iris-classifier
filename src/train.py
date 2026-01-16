@@ -1,3 +1,7 @@
+import joblib
+
+
+
 import argparse
 from pathlib import Path
 
@@ -33,7 +37,9 @@ def main(test_size: float, random_state: int) -> None:
     # Train model
     model = DecisionTreeClassifier(random_state=random_state)
     model.fit(X_train, y_train)
-
+    
+    #Save trained model
+    joblib.dump(model, "outputs/decision_tree_model.joblib")
 
 
     # Predict
